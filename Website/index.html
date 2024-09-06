@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wacky</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="glow">Reeeaally cool links or something</h1>
+        <br>
+        <nav><div class="links-container">
+            <div class="button-group">
+                <a href="index.html">
+                    <button class="navbutton" id="navbutton1">Home</button>
+                </a>
+                <a href="portfolio.html">
+                    <button class="navbutton" id="navbutton1">Portfolio</button>
+                </a>
+            </div>        
+        </div></nav>
+    </header>
+    <div>
+        <p class="glow"> hi guys this website has some reaaaly epic links</p>
+    </div>
+    <div class="links-container">
+        <h3 class="glow">Socials</h3>
+        <br>
+        <div class="button-group">
+            <a href="https://www.roblox.com/users/167821905/profile" target="_blank">
+                <button class="button" id="hoverButton1">Roblox</button>
+            </a>
+            <a href="https://x.com/WackyAristo1" target="_blank">
+                <button class="button" id="hoverButton2">Twitter</button>
+            </a>
+            <a href="https://www.youtube.com/@Wacky_" target="_blank">
+                <button class="button" id="hoverButton3">Youtube</button>
+            </a>
+            <a href="https://www.youtube.com/@Wacky_" target="_blank">
+                <button class="button" id="hoverButton4">Discord</button>
+            </a>
+        </div>        
+    </div>
+    <div class="sdgsd">
+        <h3 class="glow">Stuff i've done</h3>
+        <p>i make games loll</p>
+    </div>
+    <div class="links-container">
+        <h3 class="glow">Shooter game</h3>
+        <p>shoot people</p>
+        <br>
+        <div class="button-group">
+            <a href="https://www.roblox.com/games/17552376513/gun-game" target="_blank">
+                <button class="button" id="hoverButton4">untitled shooter game</button>
+            </a>
+        </div>        
+    </div>
+
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p class="glow">footer.txt</p>
+    </footer>
+    
+    <script>
+        const buttons = document.querySelectorAll('.button');
+
+        buttons.forEach(button => {
+            button.addEventListener('mouseenter', () => {
+                const randomRotation = Math.random() * 10 - 5; // Generates a random number between -5 and 5
+                button.style.transform = `translateY(-5px) rotate(${randomRotation}deg)`;
+                button.classList.add('hover-effect');
+            });
+
+            button.addEventListener('mouseleave', () => {
+                button.style.transform = 'translateY(0) rotate(0)';
+                button.classList.remove('hover-effect');
+            });
+        });
+    </script>
+</body>
+</html>
